@@ -74,9 +74,6 @@ BOARD_RIL_CLASS := ../../../device/samsung/ks01lteskt/ril
 TARGET_HAVE_NEW_GRALLOC := true
 TARGET_BOOTANIMATION_MULTITHREAD_DECODE := true
 
-# Lights
-TARGET_PROVIDES_LIBLIGHT := true
-
 # NFC
 BOARD_NFC_HAL_SUFFIX := msm8974
 
