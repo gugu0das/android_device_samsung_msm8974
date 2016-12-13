@@ -15,9 +15,9 @@
 # inherit from common msm8974
 -include device/samsung/msm8974-common/BoardConfigCommon.mk
 
-TARGET_SPECIFIC_HEADER_PATH := device/samsung/jactivelteskt/include
+TARGET_SPECIFIC_HEADER_PATH := device/samsung/ks01lteskt/include
 
-TARGET_OTA_ASSERT_DEVICE := jactivelteskt,SHV-E470S
+TARGET_OTA_ASSERT_DEVICE := ks01lte,ks01lteskt,ks01ltektt,GT-I9506,SHV-E330S,SHV-E330K
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := MSM8974
@@ -33,17 +33,17 @@ BOARD_KERNEL_SEPARATED_DT := true
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000 --tags_offset 0x01e00000
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
 TARGET_KERNEL_CONFIG := cm_msm8974_sec_defconfig
-TARGET_KERNEL_VARIANT_CONFIG := msm8974_sec_jactive_skt_defconfig
+TARGET_KERNEL_VARIANT_CONFIG := msm8974_sec_ks01_skt_defconfig
 TARGET_KERNEL_SELINUX_CONFIG := selinux_defconfig
-TARGET_KERNEL_SOURCE := kernel/samsung/jactivelteskt
+TARGET_KERNEL_SOURCE := kernel/samsung/ks01lteskt
 
 # Audio
 BOARD_HAVE_NEW_QCOM_CSDCLIENT := true
 USE_CUSTOM_AUDIO_POLICY := 1
 
 # Bluetooth
-BOARD_BLUEDROID_VENDOR_CONF := device/samsung/jactivelteskt/bluetooth/vnd_jactivelteskt.txt
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/jactivelteskt/bluetooth
+BOARD_BLUEDROID_VENDOR_CONF := device/samsung/ks01lteskt/bluetooth/vnd_ks01lteskt.txt
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/ks01lteskt/bluetooth
 BOARD_BLUETOOTH_USES_HCIATTACH_PROPERTY := false
 BOARD_HAVE_BLUETOOTH_BCM := true
 
@@ -56,10 +56,10 @@ TARGET_PROVIDES_CAMERA_HAL := true
 COMMON_GLOBAL_CFLAGS += -DCAMERA_VENDOR_L_COMPAT
 
 # CMHW
-BOARD_HARDWARE_CLASS += device/samsung/jactivelteskt/cmhw
+BOARD_HARDWARE_CLASS += device/samsung/ks01lteskt/cmhw
 
 # RIL
-BOARD_RIL_CLASS := ../../../device/samsung/jactivelteskt/ril
+BOARD_RIL_CLASS := ../../../device/samsung/ks01lteskt/ril
 
 # Graphics
 TARGET_HAVE_NEW_GRALLOC := true
@@ -80,12 +80,12 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 12685655040
 
 # Power HAL
 TARGET_POWERHAL_VARIANT := qcom
-TARGET_POWERHAL_SET_INTERACTIVE_EXT := device/samsung/jactivelteskt/power/power_ext.c
+TARGET_POWERHAL_SET_INTERACTIVE_EXT := device/samsung/ks01lteskt/power/power_ext.c
 
 # Recovery
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
-TARGET_RECOVERY_FSTAB := device/samsung/jactivelteskt/rootdir/etc/fstab.qcom
+TARGET_RECOVERY_FSTAB := device/samsung/ks01lteskt/rootdir/etc/fstab.qcom
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
 BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_HAS_NO_MISC_PARTITION := true
@@ -109,8 +109,8 @@ WIFI_DRIVER_FW_PATH_STA     := "/system/etc/wifi/bcmdhd_sta.bin"
 WIFI_DRIVER_FW_PATH_AP      := "/system/etc/wifi/bcmdhd_apsta.bin"
 
 # inherit from the proprietary version
--include vendor/samsung/jactivelteskt/BoardConfigVendor.mk
+-include vendor/samsung/ks01lteskt/BoardConfigVendor.mk
 
 # SELinux
 -include device/qcom/sepolicy/sepolicy.mk
-BOARD_SEPOLICY_DIRS += device/samsung/jactivelteskt/sepolicy
+BOARD_SEPOLICY_DIRS += device/samsung/ks01lteskt/sepolicy

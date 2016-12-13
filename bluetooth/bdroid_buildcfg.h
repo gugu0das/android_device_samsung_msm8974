@@ -18,6 +18,6 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
-#define BTM_DEF_LOCAL_NAME   "Samsung Galaxy S4 Active"
+#define BTM_DEF_LOCAL_NAME   "Samsung Galaxy S4 LTE-A"
 
 #endif
