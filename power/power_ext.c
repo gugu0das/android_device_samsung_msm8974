@@ -18,7 +18,7 @@
 #include <string.h>
 #include <fcntl.h>
 
-#define LOG_TAG "Power_Ext"
+#define LOG_TAG "PowerHAL_H_Ext"
 #include <utils/Log.h>
 
 /* touchkeys */

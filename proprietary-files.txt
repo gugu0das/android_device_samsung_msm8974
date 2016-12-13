@@ -239,42 +239,41 @@ bin/thermal-engine
 vendor/lib/libthermalclient.so
 vendor/lib/libthermalioctl.so
 
-# DRM (Marshmallow)
+# DRM
 bin/qseecomd
-vendor/lib/libdrmdecrypt.so
 vendor/lib/libdrmdiag.so
 vendor/lib/libdrmfs.so
 vendor/lib/libdrmtime.so
 vendor/lib/libQSEEComAPI.so
 vendor/lib/librpmb.so
 vendor/lib/libssd.so
-vendor/lib/libwvdrm_L1.so
-vendor/lib/libwvm.so
-vendor/lib/libWVStreamControlAPI_L1.so
-vendor/lib/drm/libdrmwvmplugin.so
-vendor/lib/mediadrm/libwvdrmengine.so
 
-# Graphics (Marshmallow)
+# Graphics (N from vendor_qcom_binaries)
 vendor/lib/egl/eglsubAndroid.so
 vendor/lib/egl/libEGL_adreno.so
 vendor/lib/egl/libGLESv1_CM_adreno.so
 vendor/lib/egl/libGLESv2_adreno.so
 vendor/lib/egl/libq3dtools_adreno.so
+vendor/lib/libC2D2.so
+vendor/lib/libCB.so
+vendor/lib/libOpenCL.so
+vendor/lib/libRSDriver_adreno.so
 vendor/lib/libadreno_utils.so
 vendor/lib/libbccQTI.so
-vendor/lib/libC2D2.so
 vendor/lib/libc2d30-a3xx.so
-vendor/lib/libCB.so
 vendor/lib/libgsl.so
 vendor/lib/libllvm-qcom.so
-vendor/lib/librs_adreno_sha1.so
 vendor/lib/librs_adreno.so
-vendor/lib/libRSDriver_adreno.so
+vendor/lib/librs_adreno_sha1.so
 vendor/lib/libsc-a3xx.so
-vendor/lib/libuiblur.so
-#
-vendor/lib/libOpenCL.so
 vendor/lib/libscale.so
+
+# Widevine
+vendor/lib/libwvdrm_L1.so
+vendor/lib/libwvm.so
+vendor/lib/libWVStreamControlAPI_L1.so
+vendor/lib/drm/libdrmwvmplugin.so
+vendor/lib/mediadrm/libwvdrmengine.so
 
 # Graphics firmware (Marshmallow)
 etc/firmware/a330_pfp.fw
@@ -359,8 +358,10 @@ bin/sensorhubservice
 lib/hw/sensors.msm8974.so
 lib/hw/sensorhubs.msm8974.so
 lib/libsam.so
+lib/libsensirion_j1.so
 lib/libgnustl_shared.so
 lib/libsensorhub.so
+lib/libsensorhubcontext.so
 lib/libsensorhubservice.so
 vendor/lib/libqcgesture.so
 vendor/lib/libqcsyncgesture.so

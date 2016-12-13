@@ -16,6 +16,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),jactivelteskt)
+ifeq ($(TARGET_DEVICE),ks01lteskt)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 endif

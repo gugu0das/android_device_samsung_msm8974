@@ -28,7 +28,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
-    camera2.portability.force_api=1
+    camera2.portability.force_api=1 \
+    media.stagefright.legacyencoder=true \
+    media.stagefright.less-secure=true
+
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -63,13 +66,17 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.eons.enabled=true \
     persist.radio.use_se_table_only=1 \
     persist.data.qmi.adb_logmask=0 \
-    ro.telephony.ril_class=SamsungQcomMobileData \
+    ro.telephony.ril_class=SamsungQcomRIL \
     ro.telephony.default_network=9 \
     telephony.lteOnGsmDevice=1
 
 # Sensors
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sensors=1
+
+# Tethering
+PRODUCT_PROPERTY_OVERRIDES += \
+    net.tethering.noprovisioning=true
 
 # Wifi
 PRODUCT_PROPERTY_OVERRIDES += \
