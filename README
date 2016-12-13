@@ -1,0 +1,15 @@
+Copyright 2016 - The CyanogenMod Project
+
+Device configuration for Samsung Galaxy S4 Active.
+
+WORK IN PROGRESS. WILL EAT YOUR CAT.
+
+
+/* Cyanogenmod */
+	https://github.com/CyanogenMod/android_device_samsung_ks01lte
+	https://github.com/CyanogenMod/android_device_samsung_klte
+	https://github.com/CyanogenMod/android_device_samsung_klte-common
+/* kyasu */
+	https://github.com/kyasu/android_device_samsung_ks01ltexx
+/* sktjdgns1189 */
+	https://github.com/sktjdgns1189/android_device_samsung_ks01lteskt
