@@ -68,6 +68,11 @@ PRODUCT_PACKAGES += \
     libxml2 \
     Snap
 
+# Bluetooth
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/bluetooth/bcm4335.hcd:system/vendor/firmware/bcm4335.hcd \
+    $(LOCAL_PATH)/bluetooth/bcm4335_prepatch.hcd:system/vendor/firmware/bcm4335_prepatch.hcd
+
 # SamsungDoze
 PRODUCT_PACKAGES += \
     SamsungDoze
