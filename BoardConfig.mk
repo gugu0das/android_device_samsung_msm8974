@@ -15,9 +15,9 @@
 # inherit from common msm8974
 -include device/samsung/msm8974-common/BoardConfigCommon.mk
 
-TARGET_SPECIFIC_HEADER_PATH := device/samsung/ks01lteskt/include
+TARGET_SPECIFIC_HEADER_PATH := device/samsung/ks01ltekor/include
 
-TARGET_OTA_ASSERT_DEVICE := ks01lte,ks01ltexx,ks01lteskt,ks01ltektt,GT-I9506,SHV-E330S,SHV-E330K
+TARGET_OTA_ASSERT_DEVICE := ks01lte,ks01ltexx,ks01ltekor,ks01lteskt,ks01ltektt,GT-I9506,SHV-E330S,SHV-E330K
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := MSM8974
@@ -31,14 +31,14 @@ BOARD_KERNEL_CMDLINE := console=null androidboot.hardware=qcom user_debug=31 msm
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_SEPARATED_DT := true
-BOARD_CUSTOM_BOOTIMG_MK := device/samsung/ks01lteskt/mkbootimg.mk
+BOARD_CUSTOM_BOOTIMG_MK := device/samsung/ks01ltekor/mkbootimg.mk
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000 --tags_offset 0x01e00000
 KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-ubertc_7.0-2016.04/bin
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-eabi-
 TARGET_KERNEL_CONFIG := cm_msm8974_sec_defconfig
 TARGET_KERNEL_VARIANT_CONFIG := msm8974_sec_ks01_skt_defconfig
 TARGET_KERNEL_SELINUX_CONFIG := selinux_defconfig
-TARGET_KERNEL_SOURCE := kernel/samsung/ks01lteskt
+TARGET_KERNEL_SOURCE := kernel/samsung/ks01ltekor
 
 # Legacy BLOB Support
 TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS := true
@@ -48,8 +48,8 @@ BOARD_HAVE_NEW_QCOM_CSDCLIENT := true
 USE_CUSTOM_AUDIO_POLICY := 1
 
 # Bluetooth
-BOARD_CUSTOM_BT_CONFIG := device/samsung/ks01lteskt/bluetooth/vnd_ks01lteskt.txt
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/ks01lteskt/bluetooth
+BOARD_CUSTOM_BT_CONFIG := device/samsung/ks01ltekor/bluetooth/vnd_ks01ltekor.txt
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/ks01ltekor/bluetooth
 BOARD_HAVE_BLUETOOTH_BCM := true
 BOARD_HAVE_SAMSUNG_BLUETOOTH := true
 
@@ -62,13 +62,13 @@ TARGET_PROVIDES_CAMERA_HAL := true
 USE_DEVICE_SPECIFIC_CAMERA := true
 
 # CMHW
-BOARD_HARDWARE_CLASS += device/samsung/ks01lteskt/cmhw
+BOARD_HARDWARE_CLASS += device/samsung/ks01ltekor/cmhw
 
 # Hardware samsung
 BOARD_VENDOR := samsung
 
 # RIL
-BOARD_RIL_CLASS := ../../../device/samsung/ks01lteskt/ril
+BOARD_RIL_CLASS := ../../../device/samsung/ks01ltekor/ril
 
 # Graphics
 TARGET_HAVE_NEW_GRALLOC := true
@@ -91,12 +91,12 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 # Power HAL
 TARGET_POWERHAL_VARIANT := qcom
-TARGET_POWERHAL_SET_INTERACTIVE_EXT := device/samsung/ks01lteskt/power/power_ext.c
+TARGET_POWERHAL_SET_INTERACTIVE_EXT := device/samsung/ks01ltekor/power/power_ext.c
 
 # Recovery
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
-TARGET_RECOVERY_FSTAB := device/samsung/ks01lteskt/rootdir/etc/fstab.qcom
+TARGET_RECOVERY_FSTAB := device/samsung/ks01ltekor/rootdir/etc/fstab.qcom
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
 BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_HAS_NO_MISC_PARTITION := true
@@ -122,8 +122,8 @@ WIFI_DRIVER_NVRAM_PATH_PARAM:= "/sys/module/dhd/parameters/nvram_path"
 WIFI_DRIVER_NVRAM_PATH      := "/system/etc/wifi/nvram_net.txt"
 
 # inherit from the proprietary version
--include vendor/samsung/ks01lteskt/BoardConfigVendor.mk
+-include vendor/samsung/ks01ltekor/BoardConfigVendor.mk
 
 # SELinux
 -include device/qcom/sepolicy/sepolicy.mk
-BOARD_SEPOLICY_DIRS += device/samsung/ks01lteskt/sepolicy
+BOARD_SEPOLICY_DIRS += device/samsung/ks01ltekor/sepolicy
