@@ -1,7 +1,7 @@
 #!/bin/bash
 
 set -e
-export DEVICE=ks01lteskt
+export DEVICE=ks01ltekor
 export VENDOR=samsung
 
 function extract() {
