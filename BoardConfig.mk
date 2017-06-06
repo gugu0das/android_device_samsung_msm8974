@@ -36,7 +36,7 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000 --tags_offset 0x01e00000
 KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/armeb-linux-gnueabihf-linaro_6.3.1-2017.02/bin
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := armeb-linux-gnueabihf-
 TARGET_KERNEL_CONFIG := cm_msm8974_sec_defconfig
-TARGET_KERNEL_VARIANT_CONFIG := msm8974_sec_ks01_eur_defconfig
+TARGET_KERNEL_VARIANT_CONFIG := msm8974_sec_ks01eur_defconfig
 TARGET_KERNEL_SELINUX_CONFIG := selinux_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/ks01lteeur
 
