@@ -33,6 +33,10 @@ vendor/lib/rfsa/adsp/libscveT2T_skel.so
 vendor/lib/libaptX-1.0.0-rel-Android21-ARMv7A.so
 vendor/lib/libaptXScheduler.so
 
+# Bluetooth firmware
+vendor/firmware/bcm4335_V0093.0399.hcd
+vendor/firmware/bcm4335_V0093.0399_wisol.hcd
+
 # Camera chromatix
 etc/C13QL_s5k3l2xx_module_info.xml
 etc/C13QS_imx135_module_info.xml
@@ -74,6 +78,24 @@ lib/C13QS_libchromatix_imx135_preview.so
 lib/C13QS_libchromatix_imx135_snapshot.so
 lib/C13QS_libchromatix_imx135_uhd_video.so
 lib/C13QS_libchromatix_imx135_zslshot.so
+lib/D13QL_libchromatix_s5k3l2xx_common.so
+lib/D13QL_libchromatix_s5k3l2xx_common_1080p_b.so
+lib/D13QL_libchromatix_s5k3l2xx_common_1080p_s.so
+lib/D13QL_libchromatix_s5k3l2xx_common_res0.so
+lib/D13QL_libchromatix_s5k3l2xx_common_res1.so
+lib/D13QL_libchromatix_s5k3l2xx_common_res2.so
+lib/D13QL_libchromatix_s5k3l2xx_common_res3.so
+lib/D13QL_libchromatix_s5k3l2xx_default_video.so
+lib/D13QL_libchromatix_s5k3l2xx_golfshot.so
+lib/D13QL_libchromatix_s5k3l2xx_hfr_1080p_b.so
+lib/D13QL_libchromatix_s5k3l2xx_hfr_1080p_s.so
+lib/D13QL_libchromatix_s5k3l2xx_hfr_120.so
+lib/D13QL_libchromatix_s5k3l2xx_liveshot.so
+lib/D13QL_libchromatix_s5k3l2xx_pip.so
+lib/D13QL_libchromatix_s5k3l2xx_preview.so
+lib/D13QL_libchromatix_s5k3l2xx_snapshot.so
+lib/D13QL_libchromatix_s5k3l2xx_uhd_video.so
+lib/D13QL_libchromatix_s5k3l2xx_zslshot.so
 lib/D13QS_libchromatix_imx135_common.so
 lib/D13QS_libchromatix_imx135_common_1080p_b.so
 lib/D13QS_libchromatix_imx135_common_1080p_s.so
@@ -216,7 +238,13 @@ vendor/lib/libactuator_wv560_camera.so
 vendor/lib/libmmcamera_faceproc.so
 vendor/lib/libmmcamera_image_stab.so
 vendor/lib/libmmcamera_imglib.so
+vendor/lib/libmmcamera_imx134.so
 vendor/lib/libmmcamera_imx135.so
+vendor/lib/libmmcamera_mt9m114.so
+vendor/lib/libmmcamera_ov2720.so
+vendor/lib/libmmcamera_s5k3l1yx.so
+vendor/lib/libmmcamera_s5k3l2xx.so
+vendor/lib/libmmcamera_s5k4e5ya.so
 vendor/lib/libmmcamera2_c2d_module.so
 vendor/lib/libmmcamera2_cpp_module.so
 vendor/lib/libmmcamera2_iface_modules.so
@@ -290,6 +318,7 @@ lib/libloc_api_v02.so
 lib/libloc_core.so
 lib/libloc_eng.so
 lib/libmdmdetect.so
+vendor/lib/hw/flp.default.so
 vendor/lib/libgeofence.so
 vendor/lib/libizat_core.so
 vendor/lib/liblbs_core.so
@@ -314,12 +343,13 @@ vendor/lib/libOmxQcelp13Dec.so
 vendor/lib/libOmxWmaDec.so
 vendor/lib/libSHIMDivxDrm.so
 
-# Bluetooth firmware
-vendor/firmware/bcm4335.hcd
-
-# NFC firmware
-vendor/firmware/bcm2079xB4_firmware.ncd
-vendor/firmware/bcm2079xB4_pre_firmware.ncd
+# NFC (Felica)
+etc/felica/common.cfg
+etc/felica/mfc_falp.cfg
+etc/felica/mfc_push.cfg
+etc/felica/mfm.cfg
+etc/felica/mfs.cfg
+etc/firmware/nfc_test.bin
 
 # Perf
 vendor/lib/libqti-perfd-client.so
@@ -380,8 +410,12 @@ vendor/lib/libTimeService.so
 
 # Wi-Fi
 etc/wifi/bcmdhd_apsta.bin
+etc/wifi/bcmdhd_ibss.bin
 etc/wifi/bcmdhd_mfg.bin
 etc/wifi/bcmdhd_sta.bin
-etc/wifi/bcmdhd_ibss.bin
 etc/wifi/nvram_mfg.txt
+etc/wifi/nvram_mfg.txt_murata
+etc/wifi/nvram_mfg.txt_muratafem1
 etc/wifi/nvram_net.txt
+etc/wifi/nvram_net.txt_murata
+etc/wifi/nvram_net.txt_muratafem1

@@ -1,15 +1,15 @@
-$(call inherit-product, device/samsung/ks01ltekor/full_ks01ltekor.mk)
+$(call inherit-product, device/samsung/hltekor/full_hltekor.mk)
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
-PRODUCT_DEVICE := ks01ltekor
-PRODUCT_NAME := cm_ks01ltekor
+PRODUCT_DEVICE := hltekor
+PRODUCT_NAME := cm_hltekor
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=ks01ltekor \
-    PRODUCT_DEVICE=ks01ltekor \
-    TARGET_DEVICE=ks01ltekor \
-    PRODUCT_MODEL=SHV-E330S \
-    BUILD_FINGERPRINT=samsung/ks01lteskt/ks01lteskt:5.0.1/LRX22C/E330SKSUDOL4:user/release-keys \
-    PRIVATE_BUILD_DESC="ks01lteskt-user 5.0.1 LRX22C E330SKSUDOL4 release-keys"
+    PRODUCT_NAME=hltekor \
+    PRODUCT_DEVICE=hltekor \
+    TARGET_DEVICE=hltekor \
+    PRODUCT_MODEL=SM-N900S \
+    BUILD_FINGERPRINT=samsung/hlteskt/hlteskt:5.0.1/LRX22C/N900SKSUDOL4:user/release-keys \
+    PRIVATE_BUILD_DESC="hlteskt-user 5.0.1 LRX22C N900SKSUDOL4 release-keys"
