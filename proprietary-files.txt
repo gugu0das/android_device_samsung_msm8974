@@ -34,8 +34,16 @@ vendor/lib/libaptX-1.0.0-rel-Android21-ARMv7A.so
 vendor/lib/libaptXScheduler.so
 
 # Bluetooth firmware
-vendor/firmware/bcm4335_V0093.0399.hcd
-vendor/firmware/bcm4335_V0093.0399_wisol.hcd
+vendor/firmware/bcm2079xB4_firmware.ncd
+vendor/firmware/bcm2079xB4_pre_firmware.ncd
+vendor/firmware/bcm2079xB5_firmware.ncd
+vendor/firmware/bcm2079xB5_pre_firmware.ncd
+vendor/firmware/bcm4335_V0111.0559.hcd
+vendor/firmware/bcm4335_V0111.0559_murata.hcd
+vendor/firmware/bcm4335_V0111.0559_semco.hcd
+vendor/firmware/bcm4335_V0111.0559_semcosh.hcd
+vendor/firmware/bcm4335_V0111.0559_semcove.hcd
+vendor/firmware/bcm4335_V0111.0559_wisol.hcd
 
 # Camera chromatix
 etc/C13QL_s5k3l2xx_module_info.xml
